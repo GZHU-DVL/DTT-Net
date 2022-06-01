@@ -20,6 +20,20 @@ To download the synthetic rainy cityscape dataset:
 https://pan.baidu.com/s/1nE4jBWvHbS_JrXrYQCSnsA?pwd=j9le 
 extracting code：j9le 
 
+The dataset should be saved into `./dataset/cityscape` directory.
+
+```bash
+-train
+  -Or
+  -Os
+  -Bs
+-test
+  -Or
+  -Os
+  -Bs
+  -Br
+```
+
 The synthetic-real rainy SPA-Data dataset will be released soon.
 
 ## Training networks
