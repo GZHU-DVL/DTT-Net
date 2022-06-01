@@ -31,7 +31,6 @@ The dataset should be saved into `./dataset/cityscape` directory.
   -Or
   -Os
   -Bs
-  -Br
 ```
 
 The synthetic-real rainy SPA-Data dataset will be released soon.
@@ -58,14 +57,14 @@ The pre-trained model checkpoint should be saved into `./checkpoints/DTT-Net` di
 
 ```bash
 -checkpoints
-	-DTT-Net
-		-latest_net_D_B.pth
-		-latest_net_D_Os.pth
-		-latest_net_D_Ot.pth
-		-latest_net_G1.pth
-		-latest_net_G2.pth
-		-latest_net_G3.pth
-		-latest_net_G4.pth
+  -DTT-Net
+    -latest_net_D_B.pth
+    -latest_net_D_Os.pth
+    -latest_net_D_Ot.pth
+    -latest_net_G1.pth
+    -latest_net_G2.pth
+    -latest_net_G3.pth
+    -latest_net_G4.pth
 ```
 
 ## Citation
