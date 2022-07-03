@@ -22,6 +22,10 @@ To download the synthetic rainy `cityscape` / `SPA-Data` dataset:
 https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
 extracting code：tzla
 
+**`Google Drive`**
+
+https://drive.google.com/drive/folders/1_rbz2KtesO2tZTbmrCRJAyFcEJHOSVV9?usp=sharing
+
 The dataset should be saved into `./dataset/cityscape` directory.(or` ./dataset/SPA-Data `)
 
 ```bash
@@ -68,6 +72,10 @@ To download the pre-trained model checkpoint:
 
 https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
 extracting code：tzla
+
+**`Google Drive`**
+
+https://drive.google.com/drive/folders/1_rbz2KtesO2tZTbmrCRJAyFcEJHOSVV9?usp=sharing
 
 The pre-trained model checkpoint should be saved into `./checkpoints/DTT-Net` directory.
 
