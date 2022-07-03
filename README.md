@@ -15,12 +15,14 @@ See [requirements.txt](requirements.txt) for the installation of dependencies re
 
 
 ## Downloading datasets
-To download the synthetic rainy cityscape dataset:
+To download the synthetic rainy `cityscape` / `SPA-Data` dataset:
 
-https://pan.baidu.com/s/1nE4jBWvHbS_JrXrYQCSnsA?pwd=j9le 
-extracting code：j9le 
+**`Baidu Netdisk`**
 
-The dataset should be saved into `./dataset/cityscape` directory.
+https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
+extracting code：tzla
+
+The dataset should be saved into `./dataset/cityscape` directory.(or` ./dataset/SPA-Data `)
 
 ```bash
 -train
@@ -31,12 +33,11 @@ The dataset should be saved into `./dataset/cityscape` directory.
   -Or
   -Os
   -Bs
+  -Br
 ```
 
-The synthetic-real rainy SPA-Data dataset will be released soon.
-
 ## Training networks
-To train DTT-Net on cityscape, run the training script below. 
+To train / test DTT-Net on cityscape, run the training script below. 
 
 ```bash
 # Train DTT-Net using the cityscape dataset
@@ -47,11 +48,26 @@ python test.py --dataroot ./dataset/cityscape --dataset_mode rain --model raincy
 ```
 
 
+
+To train / test DTT-Net on SPA-Data, run the training script below. 
+
+```bash
+# Train DTT-Net using the SPA-Data dataset
+python train.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincycle --name DTT-Net
+
+# Test DTT-Net using the SPA-Data dataset
+python test.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincycle --name DTT-Net
+```
+
+
 ## Using pre-trained networks
+
 To download the pre-trained model checkpoint:
 
-https://pan.baidu.com/s/1IqjCHkz97lwvLP8l89HtIQ?pwd=am75 
-extracting code：am75 
+**`Baidu Netdisk`**
+
+https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
+extracting code：tzla
 
 The pre-trained model checkpoint should be saved into `./checkpoints/DTT-Net` directory.
 
@@ -68,7 +84,7 @@ The pre-trained model checkpoint should be saved into `./checkpoints/DTT-Net` di
 ```
 
 ## Citation
-Our code is inspired by [Cycle GAN](https://github.com/junyanz/CycleGAN).
+Our code is inspired by [Cycle GAN](https://github.com/junyanz/CycleGAN) and [JRGR](https://github.com/guyii54/JRGR).
 
 ## License
 
