@@ -17,14 +17,8 @@ See [requirements.txt](requirements.txt) for the installation of dependencies re
 ## Downloading datasets
 To download the synthetic rainy `cityscape` / `SPA-Data` dataset:
 
-**`Baidu Netdisk`**
-
-https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
-extracting code：tzla
-
-**`Google Drive`**
-
-https://drive.google.com/drive/folders/1_rbz2KtesO2tZTbmrCRJAyFcEJHOSVV9?usp=sharing
+https://pan.baidu.com/s/1nE4jBWvHbS_JrXrYQCSnsA?pwd=j9le 
+extracting code：j9le 
 
 The dataset should be saved into `./dataset/cityscape` directory.(or` ./dataset/SPA-Data `)
 
@@ -57,7 +51,7 @@ To train / test DTT-Net on SPA-Data, run the training script below.
 
 ```bash
 # Train DTT-Net using the SPA-Data dataset
-python train.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincycle --name DTT-Net
+python train.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincycle --name DTT-Net --n_epochs 90 --n_epochs_decay 90
 
 # Test DTT-Net using the SPA-Data dataset
 python test.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincycle --name DTT-Net
@@ -68,14 +62,8 @@ python test.py --dataroot ./dataset/SPA-Data --dataset_mode rain --model raincyc
 
 To download the pre-trained model checkpoint:
 
-**`Baidu Netdisk`**
-
-https://pan.baidu.com/s/15kCnaN-V_PC2ht-Fh6Qk1Q?pwd=tzla 
-extracting code：tzla
-
-**`Google Drive`**
-
-https://drive.google.com/drive/folders/1_rbz2KtesO2tZTbmrCRJAyFcEJHOSVV9?usp=sharing
+https://pan.baidu.com/s/10Y9Nyrt1PHEl7Jbg2iFE4A?pwd=7yid 
+extracting code：7yid 
 
 The pre-trained model checkpoint should be saved into `./checkpoints/DTT-Net` directory.
 
