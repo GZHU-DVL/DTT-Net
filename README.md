@@ -11,13 +11,8 @@ This repository provides the official PyTorch implementation of the following pa
 # Correct
 
 We apologize for some formula errors in the paper, and hereby correct it.
-$$
-\mathcal{L}_{cyc}^{B_s}\!\left( M_s,M_r,G_r \right) =\mathbb{E}_{O_s}\left[ \lVert M_s\left( \boldsymbol{O}_{\boldsymbol{s}} \right) -M_r\left( G_r\left( M_s\left( \boldsymbol{O}_{\boldsymbol{s}} \right) \right) \right) \rVert _1 \right] ,\ \ \ \ \left( 7 \right) 
-$$
 
-$$
-\mathcal{L}_{cyc}^{B_r}\left( M_r,M_s,G_s \right) =\mathbb{E}_{O_r}\left[ \lVert M_r\left( \boldsymbol{O}_{\boldsymbol{r}} \right) -M_s\left( G_s\left( M_r\left( \boldsymbol{O}_{\boldsymbol{r}} \right) \right) \right) \rVert _1 \right] .\ \ \ \ \left( 8 \right) 
-$$
+<p align="center"><img width="100%" src="jpg/correct.jpg" /></p>
 
 ## Installation
 
