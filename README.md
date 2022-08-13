@@ -8,6 +8,17 @@ This repository provides the official PyTorch implementation of the following pa
 > 
 > **Abstract:** *Domain gap between synthetic and real rain has impeded advances in natural image deraining task. Existing methods are mostly built on convolutional neural networks (CNNs) and the receptive field of CNNs is limited, thereby resulting in poor domain adaptation. This paper designs a dual-domain translation Transformer network (termed DTT-Net) for semi-supervised image deraining. By leveraging Transformer architecture, the proposed DTT-Net can significantly mitigate the domain gap, greatly boosting the performance on real-world rainy images. Meanwhile, DTT-Net integrates three loss functions including adversarial, cycle-consistency, and MSE losses to adversarial training to further improve the visual quality of the derained images. Extensive experiments are conducted on synthetic and real-world rain datasets. Experimental results show that our DTT-Net outperforms the state-of-the-art by more than 2 dB PSNR..*
 
+# Correct
+
+We apologize for some formula errors in the paper, and hereby correct it.
+$$
+\mathcal{L}_{cyc}^{B_s}\!\left( M_s,M_r,G_r \right) =\mathbb{E}_{O_s}\left[ \lVert M_s\left( \boldsymbol{O}_{\boldsymbol{s}} \right) -M_r\left( G_r\left( M_s\left( \boldsymbol{O}_{\boldsymbol{s}} \right) \right) \right) \rVert _1 \right] ,\ \ \ \ \left( 7 \right) 
+$$
+
+$$
+\mathcal{L}_{cyc}^{B_r}\!\left( M_r,M_s,G_s \right) =\mathbb{E}_{O_r}\left[ \lVert M_r\left( \boldsymbol{O}_{\boldsymbol{r}} \right) -M_s\left( G_s\left( M_r\left( \boldsymbol{O}_{\boldsymbol{r}} \right) \right) \right) \rVert _1 \right] .\ \ \ \ \left( 8 \right)
+$$
+
 ## Installation
 
 This repository is built in PyTorch 1.10.2 and tested on Ubuntu 18.04 (Python3.6, CUDA11.2).
